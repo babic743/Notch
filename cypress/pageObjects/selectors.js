@@ -26,3 +26,5 @@ class Selectors {
   }
 }
 export default Selectors;
+
+//ovo je skroz pogrešno

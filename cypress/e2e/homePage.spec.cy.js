@@ -35,3 +35,5 @@ describe("Homepage Tests", () => {
     cy.get("#menu-primary-navigation > .menu-about").contains("About");
   });
 });
+
+//ovo je moglo stati sve u jedan it block
