@@ -25,14 +25,16 @@ npm install
 
 3. Instalacija Cypressa
 
-````bash
-  npm install cypress --save-dev
-    ```
+```bash
+npm install cypress --save-dev
+```
 
 4. Pokretanje testova
+
 ```bash
   npx cypress open
-````
+
+```
 
 Ova naredba će pokrenuti Cypress i otvoriti interaktivno sučelje gdje možete odabrati i pokrenuti testove.
 
