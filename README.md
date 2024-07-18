@@ -19,13 +19,20 @@ Ove upute opisuju kako instalirati projekt Notch, instalirati potrebne alate pom
 2. Instalacija npm paketa
    Instalirajte npm pakete koji su potrebni za projekt:
 
+```bash
 npm install
+```
 
 3. Instalacija Cypressa
-   npm install cypress --save-dev
+
+````bash
+  npm install cypress --save-dev
+    ```
 
 4. Pokretanje testova
-   npx cypress open
+```bash
+  npx cypress open
+````
 
 Ova naredba će pokrenuti Cypress i otvoriti interaktivno sučelje gdje možete odabrati i pokrenuti testove.
 
