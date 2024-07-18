@@ -19,13 +19,13 @@ Ove upute opisuju kako instalirati projekt Notch, instalirati potrebne alate pom
 2. Instalacija npm paketa
    Instalirajte npm pakete koji su potrebni za projekt:
 
-````bash npm install
+npm install
 
 3. Instalacija Cypressa
-```bash npm install cypress --save-dev
+   npm install cypress --save-dev
 
 4. Pokretanje testova
-```bash npx cypress open
+   npx cypress open
 
 Ova naredba će pokrenuti Cypress i otvoriti interaktivno sučelje gdje možete odabrati i pokrenuti testove.
 
@@ -34,4 +34,6 @@ Testovi: Testovi se nalaze u direktoriju cypress/e2e. Možete dodavati, uređiva
 Konfiguracija: Konfiguracija Cypress-a nalazi se u cypress.json. Podesite opcije prema vašim zahtjevima.
 Dokumentacija: Za detaljnije informacije o korištenju Cypress-a pogledajte Cypress dokumentaciju.
 
-````
+```
+
+```
