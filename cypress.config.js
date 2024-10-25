@@ -5,6 +5,7 @@ module.exports = defineConfig({
     supportFile: false,
     baseUrl: "https://wearenotch.com/",
     watchForFileChanges: false,
+    experimentalSessionAndOrigin: true,
     setupNodeEvents(on, config) {
     },
   },

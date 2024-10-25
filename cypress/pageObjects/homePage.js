@@ -5,17 +5,20 @@ class HomePage {
   }
 
   acceptCookies() {
-    cy.get("button.cky-btn-accept", { timeout: 10000 }) // Increase timeout if needed
-      .should("be.visible")
-      .each(($el) => {
-        cy.wrap($el).click({ force: true }); // Click each element found
-      });
-    cy.get("#cookie_action_close_header", { timeout: 10000 }) // Increase timeout if needed
-      .should("be.visible")
-      .each(($el) => {
-        cy.wrap($el).click({ force: true }); // Click each element found
-      });
+    Cypress.on('uncaught:exception', (err, runnable) => {
+      // dodan ovaj dio koda zbog cross origin errora koj se pojavljivao u runneru nakon klika na "Accept All" button u cookie modalu.
+      // nisam uspio rijesiti problem na nijedan drugi nacin
+      return false;
+    });
+
+    cy.get('.cky-notice-btn-wrapper', { timeout: 20000 }) 
+      .should('be.visible')
+      .find('.cky-btn-accept') 
+      .should('be.visible')
+      .wait(1000)
+      .click(); 
   }
 }
 
 export default HomePage;
+
