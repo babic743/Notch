@@ -4,7 +4,7 @@ import HomePage from "../pageObjects/homePage";
 describe('Visit the homepage and click on Careers', () => {
   const homePage = new HomePage();
 
-  it('Visits the homepage, accepts cookies, clicks on Careers, clicks on Fullstack engineer open position and verifies the URL', () => {
+  it('Visits the homepage, accepts cookies, clicks on Careers, clicks on Fullstack engineer open position, verifies the page and the page URL', () => {
     homePage.visit();
     homePage.acceptCookies();
     cy.get("#menu-primary-navigation").contains("Careers").click();
