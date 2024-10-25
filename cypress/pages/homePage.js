@@ -18,6 +18,18 @@ class HomePage {
       .wait(1000)
       .click(); 
   }
+
+  clickCareers(){
+    cy.get(".c-siteHeader__container")
+    .find(".menu-item")
+    .filter(".menu-careers")
+    .should("be.visible")
+    .click();
+  }
+
+  verifyCareers(){
+  cy.url().should('eq', 'https://wearenotch.com/careers/');
+  }
 }
 
 export default HomePage;
