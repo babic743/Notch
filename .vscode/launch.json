@@ -1,0 +1,24 @@
+{
+    "stopOnEntry": false,
+    "cwd": "${workspaceRoot}",
+    "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/cypress",
+    "runtimeArgs": [
+        "open"
+    ],
+    "console" : "internalConsole",
+    "port": 5858,
+    "name": "Launch Chrome",
+        "request": "launch",
+        "type": "chrome",
+        "url": "http://localhost:8080",
+        "webRoot": "${workspaceFolder}",
+        "configurations": [
+        {
+            "name": "Run npm start",
+            "request": "launch",
+            "type": "chrome"
+        }
+        ]
+    
+    ,
+}
